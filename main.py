@@ -23,6 +23,14 @@ def getmeteo():
     return data
 
 
+@app.route('/health')
+def health():
+    
+    health_api=200
+    if health_api==200:
+        app.logger.info('APP health is well')
+
+
 if __name__=="__main__":
     
     #specification du port
