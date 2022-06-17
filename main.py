@@ -6,7 +6,7 @@ import flask
 
 app=Flask(__name__)
 
-@app.route('/',methods=['GET'])
+@app.route('/')
 
 def getmeteo():
     url = "http://api.openweathermap.org/data/2.5/weather?"
